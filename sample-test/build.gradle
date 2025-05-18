@@ -1,15 +1,27 @@
-apply plugin: 'java'
+apply plugin: 'com.android.application'
+apply plugin: 'me.ele.lancet'
 
-dependencies {
-    compile project(":lancet-base")
-    testCompile project(":lancet-plugin")
-    testCompile "com.android.tools.build:gradle:$android_tools_version"
-    testCompile "junit:junit:4.12"
-    testCompile 'com.squareup.okio:okio:1.11.0'
-    testCompile 'org.assertj:assertj-core:3.6.2'
-    testCompile 'org.mockito:mockito-core:2.8.47'
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.sample.playground"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
 }
 
+dependencies {
+    implementation project(":lancet-api")
+    testImplementation 'junit:junit:4.13.2'
+}
 
 task executeTestSample(type:JavaExec) {
     main = "com.sample.playground.Main"

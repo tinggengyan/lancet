@@ -1,6 +1,6 @@
 package me.ele.lancet.weaver.internal.graph;
 
-import me.ele.lancet.base.Scope;
+import me.ele.lancet.api.Scope;
 
 import java.util.ArrayList;
 import java.util.Collections;

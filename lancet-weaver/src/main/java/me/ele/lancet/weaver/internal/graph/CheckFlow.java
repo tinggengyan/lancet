@@ -1,7 +1,7 @@
 package me.ele.lancet.weaver.internal.graph;
 
 import com.android.build.api.transform.Status;
-import me.ele.lancet.base.Scope;
+import me.ele.lancet.api.Scope;
 import me.ele.lancet.weaver.internal.log.Log;
 
 import java.util.*;

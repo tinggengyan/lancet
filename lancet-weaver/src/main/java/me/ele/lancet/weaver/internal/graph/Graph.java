@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 
-import me.ele.lancet.base.Scope;
+import me.ele.lancet.api.Scope;
 import me.ele.lancet.weaver.internal.log.Log;
 
 /**

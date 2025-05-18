@@ -1,7 +1,7 @@
 package me.ele.lancet.weaver.internal.asm;
 
 import com.google.common.base.Preconditions;
-import me.ele.lancet.base.annotations.ClassOf;
+import me.ele.lancet.api.annotations.ClassOf;
 import me.ele.lancet.weaver.internal.asm.classvisitor.methodvisitor.AutoUnboxMethodVisitor;
 import me.ele.lancet.weaver.internal.graph.ClassEntity;
 import me.ele.lancet.weaver.internal.graph.FieldEntity;

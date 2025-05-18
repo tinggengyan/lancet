@@ -1,9 +1,13 @@
 package com.sample.playground;
 
-import me.ele.lancet.base.Origin;
-import me.ele.lancet.base.This;
-import me.ele.lancet.base.annotations.Insert;
-import me.ele.lancet.base.annotations.TargetClass;
+import android.os.Bundle;
+import android.util.Log;
+
+import me.ele.lancet.api.Origin;
+import me.ele.lancet.api.This;
+import me.ele.lancet.api.annotations.Insert;
+import me.ele.lancet.api.annotations.Proxy;
+import me.ele.lancet.api.annotations.TargetClass;
 
 public class HookClass {
     @TargetClass("com.sample.playground.CoffeeMaker")
@@ -15,11 +19,19 @@ public class HookClass {
         return (Cup) Origin.call();
     }
 
-    private static void test(){
+    @TargetClass("android.app.Activity")
+    @Proxy("onCreate")
+    protected void onCreate(Bundle savedInstanceState) {
+        Log.d("boluo", "before Activity onCreate");
+        Origin.callVoid();
+    }
+
+
+    private static void test() {
         System.out.println("ha");
     }
 
-    static synchronized void test2(){
+    static synchronized void test2() {
         return;
     }
 }

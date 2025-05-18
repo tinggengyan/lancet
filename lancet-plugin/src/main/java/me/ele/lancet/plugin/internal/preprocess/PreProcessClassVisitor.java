@@ -1,6 +1,6 @@
 package me.ele.lancet.plugin.internal.preprocess;
 
-import me.ele.lancet.base.annotations.*;
+import me.ele.lancet.api.annotations.*;
 import me.ele.lancet.weaver.internal.graph.ClassEntity;
 import me.ele.lancet.weaver.internal.graph.FieldEntity;
 import me.ele.lancet.weaver.internal.graph.MethodEntity;

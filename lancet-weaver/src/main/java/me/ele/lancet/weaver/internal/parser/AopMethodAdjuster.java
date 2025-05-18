@@ -1,7 +1,7 @@
 package me.ele.lancet.weaver.internal.parser;
 
-import me.ele.lancet.base.Origin;
-import me.ele.lancet.base.This;
+import me.ele.lancet.api.Origin;
+import me.ele.lancet.api.This;
 import me.ele.lancet.weaver.internal.util.PrimitiveUtil;
 import me.ele.lancet.weaver.internal.util.TypeUtil;
 import org.objectweb.asm.Opcodes;

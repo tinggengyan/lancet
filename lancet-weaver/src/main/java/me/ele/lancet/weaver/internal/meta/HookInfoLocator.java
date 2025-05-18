@@ -9,7 +9,7 @@ import org.objectweb.asm.tree.MethodNode;
 import java.util.Arrays;
 import java.util.Set;
 
-import me.ele.lancet.base.Scope;
+import me.ele.lancet.api.Scope;
 import me.ele.lancet.weaver.internal.entity.ProxyInfo;
 import me.ele.lancet.weaver.internal.entity.InsertInfo;
 import me.ele.lancet.weaver.internal.entity.TransformInfo;
